@@ -25,7 +25,7 @@ function [] = mat2csv(filepath)
     [filepath,filename,~] = fileparts(filepath);        % Seperate full filepath into parts
 
     fields = transpose(fieldnames(data));               % Get struct field names (= csv header names) as cell array  
-    lens = zeros(1,length(fields));                     % Allocate space for lengths of data fields
+    lens = zeros(1,length(fields));                     % Allocate memory for lengths of data fields
     max_len = length(data.(fields{1}));         
     len_eq = true;
     for j=1:length(fields)
