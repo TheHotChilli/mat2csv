@@ -48,7 +48,7 @@ function [] = mat2csv(filepath)
     if len_eq == false
         for j=1:length(fields)
             if lens(j) < max_len 
-                %data.(fields{j}) = vertcat(data.(fields{j}), num2cell(NaN(max_len-lens(j)-1,1)));      % Extend shorter data fields with NaN values
+                %data.(fields{j}) = vertcat(data.(fields{j}), num2cell(NaN(max_len-lens(j),1)));      % Extend shorter data fields with NaN values
                 data.(fields{j}) = vertcat(data.(fields{j}), cell(max_len-lens(j),1));                % Extend shorter data fields with empty values
             end
         end
