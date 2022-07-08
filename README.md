@@ -13,3 +13,4 @@ If *filename.csv* exists it will be overwritten, otherwise a new *filename.csv* 
 - Data fields within *.mat* file need to be vector shaped.
 - Can handle mixed types of data within the *.mat* file due to cell conversion.
 - Cell conversion and writing cell arrays takes time, especially for large files! There might be faster solutions - e.g. if the .mat file only contains numerical data.   
+- *example.m* file contains a small usage example. 
