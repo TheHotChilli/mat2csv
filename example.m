@@ -1,3 +1,6 @@
+% Usage example of function mat2csv. 
+% Creates two .mat files in working directory and converts afterwards all .mat files within working dir.
+
 clc
 clear all
 close all
